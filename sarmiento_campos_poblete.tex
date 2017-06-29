@@ -13,7 +13,8 @@
 %PDF Info Is Required:
   \pdfinfo{
 /Title (Detecting Emergency Situations by Inferring Locations in Twitter)
-/Author (Hernan Sarmiento, Jaime Campos, Barbara Poblete)}
+/Author (Hernan Sarmiento, Jaime Campos, Barbara Poblete)
+/Keywords (information retrieval,citizen sensors,collective knowledge)}
 \setcounter{secnumdepth}{0}  
  \begin{document}
 % The file aaai.sty is the style file for AAAI Press 
@@ -22,7 +23,7 @@
 \title{Detecting Emergency Situations by Inferring Locations in Twitter}
 \author{Hern\'an Sarmiento\\ Department of Computer Science \\ University of Chile, Santiago, Chile \\ hsarmien@dcc.uchile.cl
 	\And Jaime Campos \\ Department of Geophysics \\ University of Chile, Santiago, Chile \\ jaime@dgf.uchile.cl
-	\And B\'arbara Poblete\\ Department of Computer Science \\ University of Chile, Santiago, Chile \\ bpoblete@dcc.uchile.cl
+	\And Barbara Poblete\\ Department of Computer Science \\ University of Chile, Santiago, Chile \\ bpoblete@dcc.uchile.cl
 }
 
 \maketitle
@@ -38,7 +39,7 @@ Social media has become a major channel for communication during high-impact rea
 
 Microblogging has played a critical role during emergency situations because traditional media have damage to infrastructure and affected people can not express their current status. For this reason, researchers have studied the behaviour during these events for to detect, summarize and classifyng messages with the goal to help authorities and the general public with situational awareness.
 
-In current works \cite{kumar2011};\cite{ashktorab2014tweedr};\cite{imranaidr2014}, these tasks are solved with methods rely on keywords over Twitter public streaming API. The problem with these keyword-based methods is the need to train in specific domains for different type of events.\cite{olteanu2014} generate set of keywords with different datasets but sometimes arise specific terms for one event, for example \textit{\#eqnz} for Earthquake in New Zealand or \textit{\#pabloph} for Typhoon Pablo in Philippines.
+In current works \cite{ashktorab2014tweedr};\cite{imranaidr2014}, these tasks are solved with methods rely on keywords over Twitter public streaming API. The problem with these keyword-based methods is the need to train in specific domains for different type of events.\cite{olteanu2014} generate set of keywords with different datasets but sometimes arise specific terms for one event, for example \textit{\#eqnz} for Earthquake in New Zealand or \textit{\#pabloph} for Typhoon Pablo in Philippines.
 
 We propose a method based on recurring mention of country-locations in messages' metadata for detecting a new emergency situation without using set of keywords related to crisis situation. These mentions can to occur into the text message, the GPS coordinates, the location of the user profile or the combination of these features.
 
@@ -74,7 +75,7 @@ For each signal, we consider original tweets and retweets, compute their frequen
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{freq_per_minute.png}
-	\caption{Normalized Frequency per Minute for Mw 6.9 chilean Earthquake}
+	\caption{Normalized Frequency per Minute for Mw 6.9 chilean Earthquake. (a) \textit{Countrygeo} signal. (b) \textit{Countrytxt} signal.(c) \textit{Countryusr} signal. (d) \textit{Countrytxt-usr} signal.}
 \end{figure}
 
 \section{Results and Discussion}
